@@ -49,4 +49,77 @@ body{
     background-color: #121212;
     border-radius: 8px;
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4px 8px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 200px;
+    width: 300px
 }
+
+.library .library__content{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.library .library__button{
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background-color: transparent;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+    
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 250px; /* Largura fixa para tablets */
+    }
+
+    .library {
+        width: 250px; /* Ajusta a largura da .library para tablets */
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 200px; /* Sidebar menor em telas muito pequenas */
+    }
+
+    .library {
+        width: 200px; /* Ajusta a largura para dispositivos pequenos */
+        margin-top: 8px;
+    }
+
+    .sidebar nav ul {
+        padding: 0 10px 10px 10px;
+    }
+
+    .sidebar ul li a {
+        font-size: 12px;
+    }
+}
+
+/* Para telas grandes, sem limitações de largura */
+@media (min-width: 1200px) {
+    .sidebar {
+        width: 20vw; /* Sidebar com largura relativa à tela em telas muito grandes */
+    }
+
+    .library {
+        width: 20vw; /* .library também ajustada com base na tela */
+    }
+}
+
+
