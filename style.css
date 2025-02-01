@@ -142,7 +142,7 @@ body{
 }
 
 .sidebar .cookies{
-    margin 25px 20px;
+    margin: 25px 20px;
 }
 
 .sidebar .cookies a{
@@ -168,4 +168,30 @@ body{
     border-radius: 20px;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1DB954; /* Cor do Spotify */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+  }
+
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .btn-signup {
+    padding: 10px 20px;
+    background-color: #191414;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
